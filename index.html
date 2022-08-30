@@ -8,11 +8,66 @@
 
     <title>Tailwind Base Project</title>
 
-    <!-- Fonts -->
-
     <script src="https://kit.fontawesome.com/29f99118dd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="public/scripts.js"></script>
 </head>
-<body>
-    <h1 class="text-center w-full">TAILWIND</h1>
+<body class="font-overpass">
+    <main class="w-full h-full bg-v-dark-blue flex justify-center items-center">
+        <div class="bg-gradient-to-b from-dark-blue to-darker-blue w-[90%] md:w-[70%] lg:w-[29%] h-[52%] rounded-3xl p-8">
+
+            <div id="form-body">
+                <i class="fa-solid fa-star text-orange bg-dark-blue p-4 rounded-full"></i>
+                <h1 class="pt-4 lg:pt-8">
+                    How did we do?
+                </h1>
+                <p class="pt-2">
+                    Please let us know how we did with your support
+                    request. All feedback is appreciated to help us
+                    improve our offering!
+                </p>
+                <div class="flex justify-between pt-4">
+                    <label class="group">
+                        <input class="peer" type="radio" name="support_review" value="1"/>
+                        <span class="group-hover:text-white peer-checked:text-white">1</span>
+                    </label>
+
+                    <label class="group">
+                        <input class="peer" type="radio" name="support_review" value="2"/>
+                        <span class="group-hover:text-white peer-checked:text-white">2</span>
+                    </label>
+
+                    <label class="group">
+                        <input class="peer" type="radio" name="support_review" value="3"/>
+                        <span class="group-hover:text-white peer-checked:text-white">3</span>
+                    </label>
+
+                    <label class="group">
+                        <input class="peer" type="radio" name="support_review" value="4"/>
+                        <span class="group-hover:text-white peer-checked:text-white">4</span>
+                    </label>
+
+                    <label class="group">
+                        <input class="peer" type="radio" name="support_review" value="5"/>
+                        <span class="group-hover:text-white peer-checked:text-white">5</span>
+                    </label>
+                </div>
+
+                <button id="support-form" class="mt-5">SUBMIT</button>
+            </div>
+
+            <div id="form-response" class="hidden text-center">
+                <img class="m-auto" src="public/images/illustration-thank-you.svg">
+                <span id="thank-you-message" class="block w-max m-auto text-orange bg-dark-blue rounded-3xl my-8 py-2 px-4"></span>
+                <h1 class="pb-2">Thank you!</h1>
+                <p>
+                    We appreciate you taking the time to give a rating.
+                    If you ever need more support, don't hesitate to
+                    get in touch!
+                </p>
+            </div>
+
+        </div>
+    </main>
 </body>
 </html>

@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body { @apply w-full h-full; }
+
+h1 { @apply text-white text-[24px] lg:text-[28px] tracking-wide font-medium }
+
+p { @apply text-light-gray text-[12px] lg:text-[15px] leading-relaxed }
+
+input[type="radio"] { @apply appearance-none w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-dark-blue checked:bg-light-gray hover:bg-orange }
+
+label { @apply relative }
+label span { @apply absolute left-[50%] translate-x-[-50%] top-[23%] lg:top-[27%] text-light-gray peer-checked:text-white }
+
+button { @apply w-full py-3 px-8 text-white rounded-3xl bg-orange tracking-wider hover:bg-white hover:text-orange }
